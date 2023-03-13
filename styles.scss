@@ -1,0 +1,11 @@
+.skills__icon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+
+    &--icon {
+        font-size: 100px;
+        padding: 20px;
+    }
+}
