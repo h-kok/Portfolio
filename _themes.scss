@@ -1,0 +1,27 @@
+$primary-color: rgb(47, 93, 98);
+$secondary-color: rgb(94, 139, 126);
+$tertiary-color: rgb(223, 238, 234);
+$quaternary-color: rgb(94, 139, 126);
+
+%primary-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%default-icon-properties {
+    font-size: 30px;
+    padding: 20px;
+}
+
+%section-padding {
+    margin: 5vw;
+    padding: 10vw;
+    height: 70vh;
+}
+
+%fixed-elements {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    color: $tertiary-color;
+}

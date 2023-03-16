@@ -1,0 +1,36 @@
+@import "themes";
+
+.projects {
+    margin: 5vw;
+    padding: 10vw;
+    color: $primary-color;
+
+    &__main-heading {
+        text-align: right;
+    }
+
+    &__wrapper {
+        @extend %primary-flex;
+        flex-direction: column;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+
+        margin: 3%;
+    }
+    &__text {
+        width: 50%;
+
+        padding: 3%;
+    }
+
+    &__img-link {
+        margin: 10px;
+    }
+    &__icon {
+        @extend %default-icon-properties;
+        color: $primary-color;
+    }
+}

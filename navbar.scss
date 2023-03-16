@@ -1,0 +1,41 @@
+@import "themes";
+
+.navbar {
+    @extend %fixed-elements;
+    @extend %primary-flex;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $quaternary-color;
+
+    &__list {
+        @extend %primary-flex;
+        list-style-type: none;
+        margin: 10px 40px 10px 0px;
+        // margin-right: 40px;
+        justify-content: space-around;
+        padding-left: 0px;
+    }
+
+    &__list-item {
+        margin: 0px 30px;
+        // color: $primary-color;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $tertiary-color;
+        &:visited {
+            color: $tertiary-color; //%primarycolor/font?
+        }
+        &:hover {
+            color: $tertiary-color;
+            font-weight: bold;
+        }
+    }
+
+    &__img {
+        width: 30px;
+        height: 30px;
+    }
+}

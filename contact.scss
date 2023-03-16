@@ -1,0 +1,47 @@
+@import "themes";
+
+.contact {
+    @extend %fixed-elements;
+
+    bottom: 35px;
+    padding-top: 20px;
+    background-color: $secondary-color;
+
+    &__icon-wrapper {
+        @extend %primary-flex;
+        justify-content: space-evenly;
+    }
+
+    &__link-wrapper {
+        @extend %primary-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // color: $primary-color;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__icon {
+        @extend %default-icon-properties;
+        color: $tertiary-color;
+
+        &--envelope {
+            border: 2px solid $tertiary-color;
+            border-radius: 25%;
+            padding: 4px;
+            margin-top: 5px;
+        }
+    }
+
+    // &__email-link {
+    //     margin-bottom: 5px;
+    // }
+
+    &__link-text {
+        text-align: center;
+        margin: 5px 0px;
+    }
+}

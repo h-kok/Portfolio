@@ -7,88 +7,264 @@
         <title>Hannah's House</title>
         <link rel="stylesheet" href="./styles.css" />
         <link
+            rel="icon"
+            type="image/png"
+            href="https://img.icons8.com/ios/50/null/h-key.png"
+        />
+        <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
     </head>
     <body>
-        <nav>
-            <!-- home, about, skills, projects, contact -->
-            <ul>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__list-item">
+                    <img class="navbar__img" src="icons8-h-key-50.png" />
+                </li>
+            </ul>
+            <ul class="navbar__list">
+                <li class="navbar__list-item">
+                    <a class="navbar__link" href="#home">Home</a>
+                </li>
+                <li class="navbar__list-item">
+                    <a class="navbar__link" href="#about">About</a>
+                </li>
+                <li class="navbar__list-item">
+                    <a class="navbar__link" href="#skills">Skills</a>
+                </li>
+                <li class="navbar__list-item">
+                    <a class="navbar__link" href="#projects">Projects</a>
+                </li>
             </ul>
         </nav>
 
         <main>
             <section class="home" id="home">
-                <!-- name and title -->
-                <p>Hannah Kok</p>
-                <p>Software Developer Trainee</p>
-            </section>
-            <section class="about" id="about">
-                <!-- about me: starting my programming journey, background in allied health: physio and health science, want to use tech skills to improve health?  -->
-            </section>
-            <section class="skills" id="skills">
-                <!-- tech skills: html, css, scss, js, java, react, spring, sql -->
-                <h1>My tech stacks and skills are:</h1>
-                <div class="skills__icon-wrapper">
-                    <i
-                        class="skills__icon-wrapper--icon devicon-html5-plain-wordmark"
-                    ></i>
-
-                    <i
-                        class="skills__icon-wrapper--icon devicon-css3-plain-wordmark"
-                    ></i>
-
-                    <i
-                        class="skills__icon-wrapper--icon devicon-sass-original"
-                    ></i>
-
-                    <i
-                        class="skills__icon-wrapper--icon devicon-javascript-plain"
-                    ></i>
-
-                    <i
-                        class="skills__icon-wrapper--icon devicon-java-plain-wordmark"
-                    ></i>
-
-                    <i
-                        class="skills__icon-wrapper--icon devicon-react-original-wordmark"
-                    ></i>
-
-                    <i
-                        class="skills__icon-wrapper--icon devicon-spring-plain-wordmark"
-                    ></i>
-
-                    <i
-                        class="skills__icon-wrapper--icon devicon-mysql-plain-wordmark"
-                    ></i>
-                    <i
-                        class="skills__icon-wrapper--icon devicon-github-original-wordmark"
-                    ></i>
-                    <i
-                        class="skills__icon-wrapper--icon devicon-amazonwebservices-plain-wordmark"
-                    ></i>
-                    <!-- <i
-                        class="skills__icon-wrapper--icon devicon-firebase-plain-wordmark"
-                    ></i> -->
+                <div class="home__text-wrapper">
+                    <h1 class="home__main-heading">Hannah Kok</h1>
+                    <h2 class="home__sub-heading">
+                        Software Developer Trainee
+                    </h2>
                 </div>
             </section>
+            <section class="about" id="about">
+                <div class="about__text-wrapper">
+                    <h1 class="about__main-heading">About me:</h1>
+                    <p class="about__para">
+                        Starting my programming journey, background in
+                        physio/health sciences, soon to be junior software
+                        developer etc. Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Ut totam laborum, laudantium delectus
+                        ullam cupiditate fuga ab. Voluptatem nesciunt quisquam,
+                        debitis reprehenderit expedita, dignissimos quo dolorum
+                        ipsum, maiores quos repudiandae?
+                    </p>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="skills__wrapper">
+                    <h1 class="skills__main-heading">
+                        I've been working with:
+                    </h1>
+                    <div class="skills__icon-wrapper">
+                        <i
+                            class="skills__icon devicon-html5-plain-wordmark"
+                        ></i>
+
+                        <i class="skills__icon devicon-css3-plain-wordmark"></i>
+
+                        <i class="skills__icon devicon-sass-original"></i>
+
+                        <i class="skills__icon devicon-javascript-plain"></i>
+
+                        <i class="skills__icon devicon-java-plain-wordmark"></i>
+
+                        <i
+                            class="skills__icon devicon-react-original-wordmark"
+                        ></i>
+
+                        <i
+                            class="skills__icon devicon-spring-plain-wordmark"
+                        ></i>
+
+                        <i
+                            class="skills__icon devicon-mysql-plain-wordmark"
+                        ></i>
+
+                        <i class="skills__icon devicon-git-plain-wordmark"></i>
+                        <i
+                            class="skills__icon devicon-amazonwebservices-plain-wordmark"
+                        ></i>
+                        <i
+                            class="skills__icon devicon-firebase-plain-wordmark"
+                        ></i>
+                    </div>
+                </div>
+            </section>
+
             <section class="projects" id="projects">
-                <!-- projects: js calculator, eShop, google-books, morse-translator, portfolio -->
-                <h1>Projects</h1>
+                <h1 class="projects__main-heading">Projects:</h1>
+
+                <div class="projects__wrapper">
+                    <article class="projects__container">
+                        <div class="projects__text">
+                            <h3 class="projects__sub-heading">
+                                JavaScript Calculator
+                            </h3>
+                            <p class="projects__description">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Ut totam laborum, laudantium
+                                delectus ullam cupiditate fuga ab. Voluptatem
+                                nesciunt quisquam, debitis reprehenderit
+                                expedita, dignissimos quo dolorum ipsum, maiores
+                                quos repudiandae?
+                            </p>
+
+                            <a class="projects__link" href=""
+                                ><i
+                                    class="projects__icon devicon-github-original"
+                                ></i
+                            ></a>
+                        </div>
+                        <div class="projects__img-link-container">
+                            <a class="projects__img-link" href=""
+                                ><img
+                                    src="http://placekitten.com/200/200"
+                                    alt="kitten"
+                                    class="projects__img"
+                            /></a>
+                        </div>
+                    </article>
+                    <article class="projects__container">
+                        <a class="projects__img-link" href=""
+                            ><img
+                                src="http://placekitten.com/200/200"
+                                alt="kitten"
+                                class="projects__img"
+                        /></a>
+                        <div class="projects__text">
+                            <h3 class="projects__sub-heading">eShop</h3>
+                            <p class="projects__description">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Ut totam laborum, laudantium
+                                delectus ullam cupiditate fuga ab. Voluptatem
+                                nesciunt quisquam, debitis reprehenderit
+                                expedita, dignissimos quo dolorum ipsum, maiores
+                                quos repudiandae?
+                            </p>
+
+                            <a class="projects__link" href=""
+                                ><i
+                                    class="projects__icon devicon-github-original"
+                                ></i
+                            ></a>
+                        </div>
+                    </article>
+                    <article class="projects__container">
+                        <div class="projects__text">
+                            <h3 class="projects__sub-heading">Google Books</h3>
+                            <p class="projects__description">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Ut totam laborum, laudantium
+                                delectus ullam cupiditate fuga ab. Voluptatem
+                                nesciunt quisquam, debitis reprehenderit
+                                expedita, dignissimos quo dolorum ipsum, maiores
+                                quos repudiandae?
+                            </p>
+
+                            <a class="projects__link" href=""
+                                ><i
+                                    class="projects__icon devicon-github-original"
+                                ></i
+                            ></a>
+                        </div>
+                        <a class="projects__img-link" href=""
+                            ><img
+                                src="http://placekitten.com/200/200"
+                                alt="kitten"
+                                class="projects__img"
+                        /></a>
+                    </article>
+                    <article class="projects__container">
+                        <a class="projects__img-link" href=""
+                            ><img
+                                src="http://placekitten.com/200/200"
+                                alt="kitten"
+                                class="projects__img"
+                        /></a>
+                        <div class="projects__text">
+                            <h3 class="projects__sub-heading">
+                                Morse Translator
+                            </h3>
+                            <p class="projects__description">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Ut totam laborum, laudantium
+                                delectus ullam cupiditate fuga ab. Voluptatem
+                                nesciunt quisquam, debitis reprehenderit
+                                expedita, dignissimos quo dolorum ipsum, maiores
+                                quos repudiandae?
+                            </p>
+
+                            <a class="projects__link" href=""
+                                ><i
+                                    class="projects__icon devicon-github-original"
+                                ></i
+                            ></a>
+                        </div>
+                    </article>
+                </div>
             </section>
             <section class="contact" id="contact">
-                <!-- contact me: email, linked in, git hub links -->
+                <div class="contact__icon-wrapper">
+                    <div class="contact__link-wrapper">
+                        <a
+                            class="contact__email-link"
+                            href="mailto:hannahkok93@outlook.com"
+                            ><span
+                                class="contact__icon contact__icon--envelope material-icons"
+                            >
+                                mail_outline
+                            </span></a
+                        >
+                        <p class="contact__link-text">Lets get in touch!</p>
+                    </div>
+                    <div class="contact__link-wrapper">
+                        <a
+                            class="contact_link"
+                            href="https://www.linkedin.com/in/h-kok/"
+                            ><i
+                                class="contact__icon devicon-linkedin-plain"
+                                alt="LinkedIn"
+                            ></i
+                        ></a>
+                        <p class="contact__link-text">/h-kok</p>
+                    </div>
+                    <div class="contact__link-wrapper">
+                        <a class="contact_link" href="https://github.com/h-kok"
+                            ><i
+                                class="contact__icon devicon-github-original"
+                                alt="GitHub"
+                            ></i
+                        ></a>
+                        <p class="contact__link-text">/h-kok</p>
+                    </div>
+                </div>
             </section>
         </main>
 
-        <footer>
-            <!-- copywright made by Hannah using html, scss, js -->
+        <footer class="copywright">
+            <p class="copywright__para" id="copywrightPara"></p>
         </footer>
+
+        <script>
+            const d = new Date();
+            let year = "&copy " + d.getFullYear() + " Hannah Kok";
+            document.getElementById("copywrightPara").innerHTML = year;
+        </script>
     </body>
 </html>
