@@ -1,7 +1,10 @@
 $primary-color: rgb(47, 93, 98);
 $secondary-color: rgb(94, 139, 126);
 $tertiary-color: rgb(223, 238, 234);
-$quaternary-color: rgb(94, 139, 126);
+$quaternary-color: rgb(167, 196, 188);
+
+$primary-font: "Syne", sans-serif;
+$secondary-font: "Inter", sans-serif;
 
 %primary-flex {
     display: flex;
@@ -13,12 +16,16 @@ $quaternary-color: rgb(94, 139, 126);
     padding: 20px;
 }
 
-%section-padding {
+%primary-section-padding {
     margin: 5vw;
-    padding: 10vw;
-    height: 70vh;
+    padding: 10vw 5vw;
+    height: 80vh;
 }
 
+%secondary-section-padding {
+    margin: 5vw;
+    padding: 25vw 5vw;
+}
 %fixed-elements {
     position: fixed;
     width: 100%;

@@ -6,6 +6,7 @@
     bottom: 35px;
     padding-top: 20px;
     background-color: $secondary-color;
+    font-family: $secondary-font;
 
     &__icon-wrapper {
         @extend %primary-flex;
@@ -22,26 +23,22 @@
 
     &__link {
         text-decoration: none;
+
+        //     &:visited {
+        //         text-decoration: none !important;
+        //     }
     }
-
-    &__icon {
-        @extend %default-icon-properties;
-        color: $tertiary-color;
-
-        &--envelope {
-            border: 2px solid $tertiary-color;
-            border-radius: 25%;
-            padding: 4px;
-            margin-top: 5px;
-        }
-    }
-
-    // &__email-link {
-    //     margin-bottom: 5px;
-    // }
 
     &__link-text {
         text-align: center;
         margin: 5px 0px;
+    }
+    &__icon {
+        @extend %default-icon-properties;
+        color: $tertiary-color;
+    }
+    &__email-img {
+        width: 35px;
+        height: 35px;
     }
 }

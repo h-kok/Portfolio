@@ -6,6 +6,18 @@ $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
 
+//%secondary-section-padding{
+//$sm padding 25vw 5vw
+//$md padding 20vw 10vw
+//$lg padding 15vw 10vw
+//$xl padding 10vw 10vw
+//$xxl padding 10vw 10vw
+
+@mixin secondary-section-padding($vertical, $horizontal) {
+    padding: $vertical $horizontal;
+    margin: 5vw;
+}
+
 @mixin phone {
     @media only screen and (max-width: $sm) {
         @content;
@@ -27,11 +39,23 @@ $xxl: 1400px;
 @mixin laptop {
     @media only screen and (min-width: ($lg+1px)) and (max-width: $xl) {
         @content;
+        //      nav bar &:hover {
+        //         border: 1px solid $quaternary-color;
+        //         border-radius: 10%;
+        //         background-color: rgb(223, 238, 234, 0.2);
+        //     }
+        // }
     }
-}
 
-@mixin desktop {
-    @media only screen and (min-width: ($xl+1px)) {
-        @content;
+    @mixin desktop {
+        @media only screen and (min-width: ($xl+1px)) and (max-width: $xxl) {
+            @content;
+            //    nav bar &:hover {
+            //         border: 1px solid $quaternary-color;
+            //         border-radius: 10%;
+            //         background-color: rgb(223, 238, 234, 0.2);
+            //     }
+            // }
+        }
     }
 }

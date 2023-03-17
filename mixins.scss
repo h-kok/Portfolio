@@ -1,0 +1,4 @@
+@mixin secondary-section-padding($vertical, $horizontal) {
+    padding: $vertical $horizontal;
+    margin: 5vw;
+}

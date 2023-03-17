@@ -1,0 +1,34 @@
+@import "themes";
+
+.about {
+    @extend %primary-section-padding;
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text-wrapper {
+        text-align: right;
+    }
+
+    &__img {
+        width: 20vw;
+        height: 20vw;
+        padding: 5vw;
+        border: 1px solid $quaternary-color;
+        border-radius: 50%;
+        background-color: $quaternary-color;
+    }
+
+    &__main-heading {
+        font-family: $primary-font;
+    }
+
+    &__para {
+        font-family: $secondary-font;
+    }
+}

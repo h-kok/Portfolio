@@ -1,8 +1,12 @@
 @use "navbar";
+@use "about";
+@use "skills";
 @use "projects";
 @use "contact";
+@use "mixins";
 
 @import "themes";
+@import "breakpoints";
 
 * {
     padding: 0;
@@ -13,53 +17,16 @@ body {
 }
 
 .home {
-    @extend %section-padding;
+    @extend %primary-section-padding;
+
+    font-family: $primary-font;
     color: $primary-color;
     display: flex;
     align-items: center;
-}
-
-.about {
-    @extend %section-padding;
-    // @extend %primary-flex;
-    color: $primary-color;
-    display: flex;
-    align-items: center;
-
-    &__wrapper {
-        display: flex;
-        align-items: center;
-    }
-
-    &__text-wrapper {
-        text-align: right;
-    }
-
-    &__img {
-        width: 20vw;
-        height: 20vw;
-    }
-}
-.skills {
-    @extend %section-padding;
-    color: $primary-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &__main-heading {
-        padding: 25px;
-    }
-
-    &__icon-wrapper {
-        @extend %primary-flex;
-        justify-content: space-around;
-        margin: auto;
-        padding-top: 20px;
-    }
-    &__icon {
+        margin-bottom: 30px;
         font-size: 50px;
-        padding: 50px;
     }
 }
 
@@ -73,6 +40,7 @@ body {
     // font-weight: bold;
     bottom: 0;
     padding: 10px 0px;
+    font-family: $secondary-font;
 
     &__para {
         color: $tertiary-color;
