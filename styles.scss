@@ -11,9 +11,7 @@
 body {
     background-color: $tertiary-color;
 }
-// main {
-//     background-color: $tertiary-color;
-// }
+
 .home {
     @extend %section-padding;
     color: $primary-color;
@@ -23,12 +21,23 @@ body {
 
 .about {
     @extend %section-padding;
+    // @extend %primary-flex;
     color: $primary-color;
     display: flex;
     align-items: center;
 
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
     &__text-wrapper {
         text-align: right;
+    }
+
+    &__img {
+        width: 20vw;
+        height: 20vw;
     }
 }
 .skills {
@@ -49,8 +58,8 @@ body {
         padding-top: 20px;
     }
     &__icon {
-        @extend %default-icon-properties;
-        // color: $primary-color;
+        font-size: 50px;
+        padding: 50px;
     }
 }
 

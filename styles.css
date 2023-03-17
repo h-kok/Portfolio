@@ -3,11 +3,6 @@
   flex-wrap: wrap;
 }
 
-.skills__icon {
-  font-size: 30px;
-  padding: 20px;
-}
-
 .home, .about, .skills {
   margin: 5vw;
   padding: 10vw;
@@ -57,7 +52,7 @@
   flex-wrap: wrap;
 }
 
-.skills__icon, .projects__icon {
+.projects__icon {
   font-size: 30px;
   padding: 20px;
 }
@@ -78,6 +73,7 @@
 .projects {
   margin: 5vw;
   padding: 10vw;
+  height: auto;
   color: rgb(47, 93, 98);
 }
 .projects__main-heading {
@@ -107,7 +103,7 @@
   flex-wrap: wrap;
 }
 
-.skills__icon, .contact__icon {
+.contact__icon {
   font-size: 30px;
   padding: 20px;
 }
@@ -160,11 +156,6 @@
   flex-wrap: wrap;
 }
 
-.skills__icon {
-  font-size: 30px;
-  padding: 20px;
-}
-
 .skills, .about, .home {
   margin: 5vw;
   padding: 10vw;
@@ -198,8 +189,16 @@ body {
   display: flex;
   align-items: center;
 }
+.about__wrapper {
+  display: flex;
+  align-items: center;
+}
 .about__text-wrapper {
   text-align: right;
+}
+.about__img {
+  width: 20vw;
+  height: 20vw;
 }
 
 .skills {
@@ -216,6 +215,11 @@ body {
   margin: auto;
   padding-top: 20px;
 }
+.skills__icon {
+  font-size: 50px;
+  padding: 50px;
+}
+
 .copywright {
   background-color: rgb(94, 139, 126);
   text-align: center;
