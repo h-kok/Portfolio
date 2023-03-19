@@ -4,8 +4,6 @@
 @import "breakpoints";
 
 .skills {
-    // @extend %secondary-section-padding;
-
     @media only screen and (max-width: $sm) {
         @include mixins.secondary-section-padding(25vw, 5vw);
     }
@@ -23,9 +21,9 @@
         @include mixins.secondary-section-padding(10vw, 10vw);
     }
 
-    color: $primary-color;
+    @extend %section-text-color;
+
     display: flex;
-    align-items: center;
     justify-content: center;
 
     &__main-heading {

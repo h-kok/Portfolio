@@ -1,8 +1,10 @@
 @use "navbar";
+@use "home";
 @use "about";
 @use "skills";
 @use "projects";
 @use "contact";
+@use "copywright";
 @use "mixins";
 
 @import "themes";
@@ -14,36 +16,4 @@
 }
 body {
     background-color: $tertiary-color;
-}
-
-.home {
-    @extend %primary-section-padding;
-
-    font-family: $primary-font;
-    color: $primary-color;
-    display: flex;
-    align-items: center;
-
-    &__main-heading {
-        margin-bottom: 30px;
-        font-size: 50px;
-    }
-}
-
-.copywright {
-    @extend %fixed-elements;
-    // @extend %primary-flex;
-    // justify-content: center;
-    // align-items: center;
-    background-color: $secondary-color;
-    text-align: center;
-    // font-weight: bold;
-    bottom: 0;
-    padding: 10px 0px;
-    font-family: $secondary-font;
-
-    &__para {
-        color: $tertiary-color;
-        height: 18px;
-    }
 }
