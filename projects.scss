@@ -4,7 +4,6 @@
 @import "breakpoints";
 
 .projects {
-    // @extend %secondary-section-padding;
     @media only screen and (max-width: $sm) {
         @include mixins.secondary-section-padding(25vw, 5vw);
     }
@@ -21,8 +20,7 @@
     @media only screen and (min-width: ($lg+1px)) {
         @include mixins.secondary-section-padding(10vw, 10vw);
     }
-
-    color: $primary-color;
+    @extend %section-text-color;
 
     &__main-heading {
         text-align: right;
@@ -36,35 +34,49 @@
     }
 
     &__container {
+        @include mixins.phone {
+            flex-direction: column;
+        }
         display: flex;
-        // justify-content: center;
         margin: 3%;
     }
     &__text {
-        // width: 50%;
         padding: 3%;
+    }
+
+    &__description {
+        padding: 2% 0%;
+        font-family: $secondary-font;
+        text-align: justify;
     }
 
     &__sub-heading {
         font-family: $primary-font;
     }
 
-    &__description {
-        font-family: $secondary-font;
-    }
-
     &__img-link {
         margin: 10px;
     }
     &__img {
+        @include mixins.phone {
+            width: 50vw;
+            height: 50vw;
+        }
         width: 20vw;
         height: 20vw;
         border: 1px solid $tertiary-color;
         border-radius: 10%;
-        box-shadow: 10px 10px $quaternary-color;
+        &:hover {
+            box-shadow: 10px 10px $quaternary-color;
+        }
     }
+
     &__icon {
         @extend %default-icon-properties;
         color: $primary-color;
+
+        &:hover {
+            @extend %hover-properties;
+        }
     }
 }
