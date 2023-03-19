@@ -1,0 +1,16 @@
+@import "themes";
+
+.home {
+    @extend %primary-section-padding;
+    @extend %section-text-color;
+
+    font-family: $primary-font;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+
+    &__main-heading {
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+}

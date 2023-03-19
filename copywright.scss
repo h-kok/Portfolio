@@ -1,0 +1,11 @@
+@import "themes";
+
+.copywright {
+    @extend %fixed-elements;
+
+    text-align: center;
+    bottom: 0;
+    padding: 10px 0px;
+    font-size: x-small;
+    height: 2vh;
+}
