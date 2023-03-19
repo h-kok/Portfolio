@@ -1,18 +1,28 @@
+@use "mixins";
+@import "breakpoints";
 @import "themes";
 
 .about {
     @extend %primary-section-padding;
-    color: $primary-color;
+    @extend %section-text-color;
+
+    @include mixins.laptop-screen-and-larger {
+        align-items: flex-start;
+    }
     display: flex;
     align-items: center;
-
+    height: 90vh;
     &__wrapper {
+        @include mixins.phone {
+            flex-direction: column;
+        }
         display: flex;
         align-items: center;
     }
 
     &__text-wrapper {
         text-align: right;
+        padding: 10%;
     }
 
     &__img {
@@ -30,5 +40,7 @@
 
     &__para {
         font-family: $secondary-font;
+        text-align: justify;
+        padding: 20px 0px;
     }
 }
