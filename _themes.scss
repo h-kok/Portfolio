@@ -19,16 +19,21 @@ $secondary-font: "Inter", sans-serif;
 %primary-section-padding {
     margin: 5vw;
     padding: 10vw 5vw;
-    height: 80vh;
 }
 
-%secondary-section-padding {
-    margin: 5vw;
-    padding: 25vw 5vw;
-}
 %fixed-elements {
     position: fixed;
     width: 100%;
     left: 0;
+    background-color: $secondary-color;
     color: $tertiary-color;
+    font-family: $secondary-font;
+}
+
+%hover-properties {
+    text-decoration: underline;
+}
+
+%section-text-color {
+    color: $primary-color;
 }
