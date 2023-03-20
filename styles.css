@@ -170,12 +170,8 @@
 }
 
 .projects__icon {
-  font-size: 30px;
+  font-size: 50px;
   padding: 20px;
-}
-
-.projects__icon:hover {
-  text-decoration: underline;
 }
 
 .projects {
@@ -256,13 +252,17 @@
 .projects__icon {
   color: rgb(47, 93, 98);
 }
-.contact__link-wrapper, .contact__icon-wrapper {
+.projects__icon:hover {
+  color: rgb(94, 139, 126);
+}
+
+.contact__icon-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
 .contact__icon {
-  font-size: 30px;
+  font-size: 50px;
   padding: 20px;
 }
 
@@ -275,36 +275,21 @@
   font-family: "Inter", sans-serif;
 }
 
-.contact__link-wrapper:hover {
-  text-decoration: underline;
-}
-
 .contact {
   padding-top: 20px;
-  padding-bottom: 4vh;
+  padding-bottom: 5vh;
   bottom: 0;
 }
 .contact__icon-wrapper {
   justify-content: space-around;
 }
-.contact__link-wrapper {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.contact__link {
-  text-decoration: none;
-}
-.contact__link-text {
-  text-align: center;
-  margin-bottom: 5px;
-}
 .contact__icon {
   color: rgb(223, 238, 234);
 }
 .contact__email-img {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
+  padding: 0px 20px;
 }
 
 .copywright {
