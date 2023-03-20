@@ -1,4 +1,5 @@
 @use "mixins";
+
 @import "breakpoints";
 @import "themes";
 
@@ -6,12 +7,15 @@
     @extend %primary-section-padding;
     @extend %section-text-color;
 
+    @include mixins.phone {
+        padding: 30vw 5vw;
+    }
     @include mixins.laptop-screen-and-larger {
         align-items: flex-start;
     }
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 70vh;
     &__wrapper {
         @include mixins.phone {
             flex-direction: column;
