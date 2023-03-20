@@ -26,6 +26,10 @@
     }
 
     &__img {
+        @include mixins.phone {
+            width: 45vw;
+            height: 45vw;
+        }
         width: 20vw;
         height: 20vw;
         padding: 5vw;

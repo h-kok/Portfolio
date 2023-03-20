@@ -108,6 +108,12 @@
   border-radius: 50%;
   background-color: rgb(167, 196, 188);
 }
+@media only screen and (max-width: 576px) {
+  .about__img {
+    width: 45vw;
+    height: 45vw;
+  }
+}
 .about__main-heading {
   font-family: "Syne", sans-serif;
 }
