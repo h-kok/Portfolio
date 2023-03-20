@@ -26,6 +26,12 @@
   list-style-type: none;
   justify-content: right;
 }
+@media only screen and (max-width: 620px) {
+  .navbar__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .navbar__list-item {
   padding: 2vw 5vw;
   font-size: 20px;

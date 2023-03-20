@@ -1,3 +1,5 @@
+@use "mixins";
+
 @import "themes";
 
 .navbar {
@@ -8,6 +10,10 @@
     align-items: center;
 
     &__list {
+        @media only screen and (max-width: 620px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
         @extend %primary-flex;
 
         list-style-type: none;
