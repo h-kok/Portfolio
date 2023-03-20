@@ -3,6 +3,8 @@
 @mixin secondary-section-padding($vertical, $horizontal) {
     padding: $vertical $horizontal;
     margin: 5vw;
+    align-items: center;
+    height: 70vh;
 }
 
 @mixin primary-section-padding($vertical, $horizontal) {
