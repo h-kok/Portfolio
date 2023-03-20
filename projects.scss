@@ -14,7 +14,6 @@
 
     @media only screen and (min-width: ($md+1px)) and (max-width: $lg) {
         @include mixins.secondary-section-padding(15vw, 10vw);
-        height: 100vh;
     }
 
     @media only screen and (min-width: ($lg+1px)) {

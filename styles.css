@@ -62,7 +62,7 @@
   font-family: "Syne", sans-serif;
   display: flex;
   align-items: center;
-  height: 70vh;
+  height: 80vh;
 }
 .home__main-heading {
   margin-bottom: 30px;
@@ -86,11 +86,12 @@
 .about {
   display: flex;
   align-items: center;
-  height: 90vh;
+  height: 70vh;
 }
-@media only screen and (min-width: 993px) {
+@media only screen and (max-width: 576px) {
   .about {
-    align-items: flex-start;
+    padding: 30vw 5vw;
+    height: 100%;
   }
 }
 .about__wrapper {
@@ -146,25 +147,33 @@
   .skills {
     padding: 25vw 5vw;
     margin: 5vw;
+    align-items: center;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .skills {
     padding: 20vw 10vw;
     margin: 5vw;
+    align-items: center;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .skills {
     padding: 15vw 10vw;
     margin: 5vw;
-    height: 100vh;
+    align-items: center;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 993px) {
   .skills {
-    padding: 10vw 10vw;
+    padding: 11vw 10vw;
     margin: 5vw;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
   }
 }
 .skills__main-heading {
@@ -179,6 +188,16 @@
 .skills__icon {
   font-size: 50px;
   padding: 50px;
+}
+@media only screen and (max-width: 576px) {
+  .skills__icon {
+    padding: 5vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .skills__icon {
+    padding: 5vw;
+  }
 }
 
 .projects__wrapper {
@@ -199,25 +218,32 @@
   .projects {
     padding: 25vw 5vw;
     margin: 5vw;
+    align-items: center;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .projects {
     padding: 20vw 10vw;
     margin: 5vw;
+    align-items: center;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .projects {
     padding: 15vw 10vw;
     margin: 5vw;
-    height: 100vh;
+    align-items: center;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 993px) {
   .projects {
     padding: 10vw 10vw;
     margin: 5vw;
+    align-items: center;
+    height: 100%;
   }
 }
 .projects__main-heading {
@@ -296,6 +322,9 @@
   padding-top: 20px;
   padding-bottom: 5vh;
   bottom: 0;
+}
+.contact__link {
+  text-decoration: none;
 }
 .contact__icon-wrapper {
   justify-content: space-around;
