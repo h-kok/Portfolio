@@ -1,0 +1,22 @@
+@use "mixins";
+
+@import "themes";
+
+.home {
+    @extend %primary-section-padding;
+    @extend %section-text-color;
+
+    font-family: $primary-font;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+
+    &__main-heading {
+        @include mixins.laptop-screen-and-larger {
+            font-size: 75px;
+        }
+
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+}

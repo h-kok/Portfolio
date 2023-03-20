@@ -1,0 +1,56 @@
+@use "mixins";
+
+@import "breakpoints";
+@import "themes";
+
+.about {
+    @extend %primary-section-padding;
+    @extend %section-text-color;
+
+    @include mixins.phone {
+        padding: 30vw 5vw;
+        height: 100%;
+    }
+
+    display: flex;
+    align-items: center;
+    height: 70vh;
+
+    &__wrapper {
+        @include mixins.phone {
+            flex-direction: column;
+        }
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__text-wrapper {
+        text-align: right;
+        padding: 10%;
+    }
+
+    &__img {
+        @include mixins.phone {
+            width: 45vw;
+            height: 45vw;
+        }
+
+        width: 20vw;
+        height: 20vw;
+        padding: 5vw;
+        border: 1px solid $quaternary-color;
+        border-radius: 50%;
+        background-color: $quaternary-color;
+    }
+
+    &__main-heading {
+        font-family: $primary-font;
+    }
+
+    &__para {
+        font-family: $secondary-font;
+        text-align: justify;
+        padding: 20px 0px;
+    }
+}
