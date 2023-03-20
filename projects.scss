@@ -35,9 +35,17 @@
     &__container {
         @include mixins.phone {
             flex-direction: column;
+            margin: 10%;
         }
+
+        &:nth-of-type(even) {
+            @include mixins.phone {
+                flex-direction: column-reverse;
+            }
+        }
+
         display: flex;
-        margin: 3%;
+        margin: 5%;
     }
     &__text {
         padding: 3%;

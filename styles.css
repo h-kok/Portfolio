@@ -256,11 +256,17 @@
 }
 .projects__container {
   display: flex;
-  margin: 3%;
+  margin: 5%;
 }
 @media only screen and (max-width: 576px) {
   .projects__container {
     flex-direction: column;
+    margin: 10%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .projects__container:nth-of-type(even) {
+    flex-direction: column-reverse;
   }
 }
 .projects__text {
