@@ -33,12 +33,11 @@
   }
 }
 .navbar__list-item {
-  padding: 2vw 5vw;
-  font-size: 20px;
+  padding: 2vw 4vw;
+  font-size: 15px;
 }
 .navbar__link {
   color: rgb(223, 238, 234);
-  text-decoration: none;
 }
 .navbar__link:visited {
   color: rgb(223, 238, 234);
@@ -46,7 +45,7 @@
 .navbar__img {
   width: 50px;
   height: 50px;
-  padding: 2vw 5vw;
+  padding: 1vw 5vw;
 }
 
 .home {
@@ -199,6 +198,16 @@
     padding: 5vw;
   }
 }
+@media only screen and (min-width: 769px) {
+  .skills__icon:nth-last-of-type(2) {
+    font-size: 70px;
+    padding: 40px;
+  }
+  .skills__icon:nth-last-of-type(4) {
+    font-size: 70px;
+    padding: 40px;
+  }
+}
 
 .projects__wrapper {
   display: flex;
@@ -288,6 +297,7 @@
   height: 20vw;
   border: 1px solid rgb(223, 238, 234);
   border-radius: 10%;
+  margin: 1vw;
 }
 @media only screen and (max-width: 576px) {
   .projects__img {
@@ -295,14 +305,12 @@
     height: 50vw;
   }
 }
-.projects__img:hover {
-  box-shadow: 10px 10px rgb(167, 196, 188);
-}
 .projects__icon {
   color: rgb(47, 93, 98);
 }
-.projects__icon:hover {
-  color: rgb(94, 139, 126);
+.projects__icon-chain {
+  width: 35px;
+  height: 35px;
 }
 
 .contact__icon-wrapper {
@@ -364,8 +372,13 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: rgb(223, 238, 234);
+}
+
+a:link {
+  text-decoration: none;
 }
