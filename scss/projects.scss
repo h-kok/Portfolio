@@ -78,19 +78,17 @@
         height: 20vw;
         border: 1px solid $tertiary-color;
         border-radius: 10%;
-
-        &:hover {
-            box-shadow: 10px 10px $quaternary-color;
-        }
+        margin: 1vw;
     }
 
     &__icon {
         @extend %default-icon-properties;
 
         color: $primary-color;
+    }
 
-        &:hover {
-            color: $secondary-color;
-        }
+    &__icon-chain {
+        width: 35px;
+        height: 35px;
     }
 }
