@@ -35,7 +35,7 @@
                     src="assets\icons8-hamburger-menu-50.png"
                     alt="menu"
                 />
-                <ul class="navbar__list navbar__list--show">
+                <ul class="navbar__list navbar__list--hide">
                     <li class="navbar__list-item">
                         <a class="navbar__link" href="#home">Home</a>
                     </li>
@@ -271,7 +271,6 @@
                             src="assets\icons8-mail-50.png"
                             alt="email"
                     /></a>
-                    <!-- <p class="contact__link-text">Lets get in touch!</p> -->
                     <a
                         class="contact_link"
                         href="https://github.com/h-kok"
@@ -281,8 +280,6 @@
                             alt="GitHub"
                         ></i
                     ></a>
-                    <!-- <p class="contact__link-text">/h-kok</p> -->
-
                     <a
                         class="contact_link"
                         href="https://www.linkedin.com/in/h-kok/"
@@ -307,8 +304,9 @@
 
             const hamburger = document.querySelector(".navbar__hamburger");
             const showMenu = document.querySelector(".navbar__list");
+
             hamburger.addEventListener("click", () => {
-                showMenu.classList.toggle("navbar__list--show");
+                showMenu.classList.toggle("navbar__list--hide");
             });
         </script>
     </body>

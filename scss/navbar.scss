@@ -30,17 +30,17 @@
 
     &__list {
         @media only screen and (max-width: 620px) {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            position: absolute;
+            right: 0;
+            top: 8vh;
+            background-color: $secondary-color;
 
-            &--show {
+            &--hide {
                 @media only screen and (max-width: 620px) {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: right;
-                    position: absolute;
-                    right: 0;
-                    top: 8vh;
-                    background-color: $secondary-color;
+                    display: none;
                 }
             }
         }

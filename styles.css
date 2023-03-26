@@ -46,11 +46,6 @@
 }
 @media only screen and (max-width: 620px) {
   .navbar__list {
-    display: none;
-  }
-}
-@media only screen and (max-width: 620px) and (max-width: 620px) {
-  .navbar__list--show {
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -58,6 +53,11 @@
     right: 0;
     top: 8vh;
     background-color: rgb(94, 139, 126);
+  }
+}
+@media only screen and (max-width: 620px) and (max-width: 620px) {
+  .navbar__list--hide {
+    display: none;
   }
 }
 .navbar__list-item {
