@@ -29,21 +29,27 @@
                 src="assets\icons8-h-key-50.png"
                 alt="h key"
             />
-
-            <ul class="navbar__list">
-                <li class="navbar__list-item">
-                    <a class="navbar__link" href="#home">Home</a>
-                </li>
-                <li class="navbar__list-item">
-                    <a class="navbar__link" href="#about">About</a>
-                </li>
-                <li class="navbar__list-item">
-                    <a class="navbar__link" href="#skills">Skills</a>
-                </li>
-                <li class="navbar__list-item">
-                    <a class="navbar__link" href="#projects">Projects</a>
-                </li>
-            </ul>
+            <div class="navbar__dropdown">
+                <img
+                    class="navbar__hamburger"
+                    src="assets\icons8-hamburger-menu-50.png"
+                    alt="menu"
+                />
+                <ul class="navbar__list navbar__list--show">
+                    <li class="navbar__list-item">
+                        <a class="navbar__link" href="#home">Home</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a class="navbar__link" href="#about">About</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a class="navbar__link" href="#skills">Skills</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a class="navbar__link" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <main>
@@ -286,7 +292,6 @@
                             alt="LinkedIn"
                         ></i
                     ></a>
-                    <!-- <p class="contact__link-text">/h-kok</p> -->
                 </div>
             </section>
         </main>
@@ -299,6 +304,12 @@
             const d = new Date();
             let year = "&copy " + d.getFullYear() + " Hannah Kok";
             document.getElementById("copywrightPara").innerHTML = year;
+
+            const hamburger = document.querySelector(".navbar__hamburger");
+            const showMenu = document.querySelector(".navbar__list");
+            hamburger.addEventListener("click", () => {
+                showMenu.classList.toggle("navbar__list--show");
+            });
         </script>
     </body>
 </html>
