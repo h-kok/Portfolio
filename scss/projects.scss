@@ -35,17 +35,16 @@
     }
 
     &__container {
-        @include mixins.phone {
-            flex-direction: column;
-            margin: 10%;
-        }
-
         &:nth-of-type(even) {
-            @include mixins.phone {
+            flex-direction: row-reverse;
+        }
+        @include mixins.phone {
+            flex-direction: column-reverse;
+            margin: 10%;
+            &:nth-of-type(even) {
                 flex-direction: column-reverse;
             }
         }
-
         display: flex;
         margin: 5%;
     }
